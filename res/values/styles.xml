@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015-2016 The CyanogenMod Project
-                   2017 The LineageOS Project
+                   2017-2020 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,7 +16,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
     <style name="Theme.Main" parent="@android:style/Theme.DeviceDefault.Settings">
         <item name="dialogPreferenceStyle">@style/Theme.Main.DialogPreferenceStyle</item>
         <item name="preferenceCategoryStyle">@style/Theme.Main.PreferenceCategoryStyle</item>
@@ -26,7 +25,8 @@
         <item name="switchPreferenceStyle">@style/Theme.Main.SwitchPreferenceStyle</item>
     </style>
 
-    <style name="Theme.Main.DialogPreferenceStyle" parent="@style/Theme.Main.PreferenceStyle"></style>
+    <style name="Theme.Main.DialogPreferenceStyle" parent="@style/Theme.Main.PreferenceStyle">
+    </style>
 
     <style name="Theme.Main.PreferenceCategoryStyle" parent="@*android:style/Preference.DeviceDefault.Category">
         <item name="allowDividerAbove">true</item>
@@ -55,7 +55,8 @@
         <item name="widgetLayout">@*android:layout/preference_widget_switch</item>
     </style>
 
-    <style name="Theme.Main.SwitchBar" parent="@android:style/ThemeOverlay.Material.ActionBar"></style>
+    <style name="Theme.Main.SwitchBar" parent="@android:style/ThemeOverlay.Material.ActionBar">
+    </style>
 
     <style name="Theme.Main.SwitchBar.Switch">
         <item name="android:trackTint">@color/switchbar_switch_track_tint</item>
@@ -64,9 +65,9 @@
 
     <style name="Theme.Main.TextAppearance.CategoryTitle"
            parent="@*android:style/TextAppearance.DeviceDefault.Body2">
-        <!-- 0.8 Spacing, 0.8/11 = 0.072727273 -->
-        <item name="android:letterSpacing">0.072727273</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textSize">11sp</item>
+        <!-- 0.8 Spacing, 0.8/11 = 0.072727273 -->
+        <item name="android:letterSpacing">0.072727273</item>
     </style>
 </resources>
